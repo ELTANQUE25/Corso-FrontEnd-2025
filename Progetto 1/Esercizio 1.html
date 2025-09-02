@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Compila il form di contatto per iscriverti al corso</h1>
+    <form action="mailto: mariangelaimperato@gmail.com">
+        <label for="nome">Nome</label>
+        <br>
+        <input type="text" required placeholder="Scrivi il tuo nome">
+        <br>
+        <label for="cognome">Cognome</label>
+        <br>
+        <input type="text" required placeholder="Scrivi il tuo cognome">
+        <br>
+        <label for="number">Numero</label>
+        <br>
+        <input type="number" required placeholder="Scrivi il tuo numero">
+        <br>
+        <label for="email">Email</label>
+        <br>
+        <input type="email" required placeholder="Scrivi la tua email">
+        <br>
+        <br>
+        <!-- SELECT -->
+        <label for="country">Selezione il tuo paese</label>
+        <select name="country" id="country" required>
+        <!-- Select nascosta -->
+        <option value="" selected hidden disabled>Seleziona un paese</option>
+        <!-- Menù paesi -->
+        <optgroup label="Europa">
+            <option value="FR">Francia</option>
+            <option value="DE">Germania</option>
+            <option value="ES">Spagna</option>
+            <option value="PT">Portogallo</option>
+            <option value="NL">Paesi Bassi</option>
+            <option value="BE">Belgio</option>
+            <option value="AT">Austria</option>
+            <option value="CH">Svizzera</option>
+            <option value="GR">Grecia</option>
+            <option value="SE">Svezia</option>
+            <option value="NO">Norvegia</option>
+            <option value="DK">Danimarca</option>
+            <option value="FI">Finlandia</option>
+            <option value="PL">Polonia</option>
+            <option value="CZ">Repubblica Ceca</option>
+        </optgroup>
+
+        <optgroup label="America">
+            <option value="US">Stati Uniti</option>
+            <option value="CA">Canada</option>
+            <option value="MX">Messico</option>
+            <option value="BR">Brasile</option>
+            <option value="AR">Argentina</option>
+            <option value="CL">Cile</option>
+            <option value="CO">Colombia</option>
+            <option value="PE">Perù</option>
+            <option value="VE">Venezuela</option>
+            <option value="UY">Uruguay</option>
+            <option value="EC">Ecuador</option>
+            <option value="BO">Bolivia</option>
+            <option value="PY">Paraguay</option>
+            <option value="CU">Cuba</option>
+            <option value="DO">Repubblica Dominicana</option>
+        </optgroup>
+        
+        <optgroup label="Africa">
+            <option value="EG">Egitto</option>
+            <option value="MA">Marocco</option>
+            <option value="DZ">Algeria</option>
+            <option value="TN">Tunisia</option>
+            <option value="ZA">Sudafrica</option>
+            <option value="NG">Nigeria</option>
+            <option value="GH">Ghana</option>
+            <option value="CI">Costa d’Avorio</option>
+            <option value="SN">Senegal</option>
+            <option value="ET">Etiopia</option>
+            <option value="KE">Kenya</option>
+            <option value="TZ">Tanzania</option>
+            <option value="UG">Uganda</option>
+            <option value="CM">Camerun</option>
+            <option value="ZM">Zambia</option>
+        </optgroup>
+        </select>
+        <br>
+        <br>
+        <label for="messaggio">Richiesta</label>
+        <br>
+        <textarea name="messaggio" id="messaggio" placeholder="Scrivi un messaggio"></textarea>
+        <br>
+        <input type="submit" value="Invia">
+    </form>
+</body>
+</html>
