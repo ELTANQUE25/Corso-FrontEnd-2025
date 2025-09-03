@@ -1,0 +1,98 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol{
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-family: 'Roboto', sans-serif;
+}
+h1,h2,h3,h4,h5,h6 {
+  color: #003554;
+}
+p, li {
+  color: #006494;
+   line-height: 1.6;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+}
+
+a,.Copyright {
+  color: #ffff;
+  text-decoration: none; /* rimuove la sottolineatura, se vuoi */
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  fill: 003554;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(./techbackground.jpg); /* percorso immagine */
+  background-size: cover; /* copre tutta la pagina */
+  background-repeat: no-repeat; /* non si ripete */
+  background-attachment: fixed; /* resta ferma quando scrolli */
+  background-position: center; /* centrata */
+}
+.header-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 10px;
+    padding: 10px 10px 0px 10px;
+    justify-items: start;
+    align-items: center;
+    background-color: #003554
+}
+
+#Titolo {
+    font-size: 30px;
+    color:#FFFBFA;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.menù {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 5px;
+    justify-items: center;
+    align-items: center;
+    padding: 50px;
+}
+main {
+    background-color:#FFFBFA;
+}
+.intro {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.section-main { display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 21px;
+}
+
+footer {
+    background-color: #003554;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    margin-bottom: 0%;
+    width: 100%;
+    margin-top: 20px;
+}
